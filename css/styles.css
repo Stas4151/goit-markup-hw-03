@@ -1,7 +1,81 @@
-body {
-    background-color: F5F5F5;
-    color:212121;
-    font-family: "Roboto";
-    
+:root {
+    --primary-site-color: #F5F5F5;
+    --main-text-color: #212121;
+    --primary-site-color: #FFFFFF;
+    --second-color: #2196F3;
+    --second-text-color: #757575;
+    --background-color-site: #2F303A;
+    --contacts-color: rgba(255, 255, 255, 0.6);
 }
 
+body {
+    background-color: var (var(--primary-site-color));
+    color: var var(--main-text-color);
+    font-family: "Roboto";   
+}
+
+/* Меню навігації */
+
+nav, .auth-nav {
+    background-color: var(--primary-site-color);
+}
+
+/* Навігація */
+.site-nav .link {
+    color: var(--main-text-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus, 
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--second-color);
+}
+
+.auth-nav .link {
+    color: var(--background-color-site);
+}
+
+/* Герой */
+
+.hero {
+    background-color: var(--background-color-site);
+}
+
+.hero-title {
+    color: var(--primary-site-color);
+}
+
+.hero-button {
+    background-color: var(--second-color);
+    color:var(--primary-site-color);
+}
+
+/* Особливості */
+
+.feature-list p {
+    color: var(--second-text-color);
+}
+
+/* Чим ми займаємося */
+
+/* Наша команда */
+
+.team-list p {
+    color: var(--second-text-color);
+}
+
+/* Підвал */
+
+.footer {
+    background-color: var(--background-color-site);
+}
+
+.adress .link {
+    color: var(--primary-site-color);
+}
+
+.adress .mail,
+.adress .tel {
+    color: var(--contacts-color);
+}
