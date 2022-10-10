@@ -1,9 +1,9 @@
 :root {
-    --primary-site-color: #F5F5F5;
-    --main-text-color: #212121;
     --primary-site-color: #FFFFFF;
-    --second-color: #2196F3;
+    --general-site-color: #F5F5F5;
+    --main-text-color: #212121;
     --second-text-color: #757575;
+    --second-color: #2196F3;
     --background-color-site: #2F303A;
     --contacts-color: rgba(255, 255, 255, 0.6);
 }
@@ -13,12 +13,42 @@ body {
     color: var(--main-text-color);
     font-family: "Roboto";
     letter-spacing: 0.02em; 
-    font-size: 14px;  
+    font-size: 14px; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
 }
 
 /* Меню навігації */
 
-nav .site-nav{
+.logo-first, .logo-second {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+}
+
+.logo-first:focus, 
+.logo-second:focus {
+    color: var(--second-color);
+}
+
+.logo-first {
+    color: var(--second-color);
+}
+
+.logo-second {
+    color: var(--main-text-color);
+}
+
+nav .site-nav {
     font-weight: 500;
     line-height: 1.14;
     background-color: var(--primary-site-color);
@@ -59,7 +89,7 @@ nav .auth-nav {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--primary-site-color);
+    color: var(--general-site-color);
 }
 
 .hero-button {
@@ -67,7 +97,7 @@ nav .auth-nav {
     font-size: 16px;
     line-height: 1.9;
     background-color: var(--second-color);
-    color:var(--primary-site-color);
+    color:var(--general-site-color);
 
 }
 
@@ -114,11 +144,30 @@ nav .auth-nav {
 
 /* Підвал */
 
-.footer {
+.logo-footer-first, .logo-footer-second {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+}
+
+.logo-footer-first {
+    color: var(--second-color);
+}
+
+.logo-footer-second {
+    color: var(--primary-site-color);
+}
+
+.footer, .adress {
+    font-style: normal;
     background-color: var(--background-color-site);
 }
 
 .adress .link {
+    text-decoration: none; 
     color: var(--primary-site-color);
 }
 
@@ -140,6 +189,7 @@ nav .auth-nav {
 }
 
 .buttons .button-project:hover {
+    color: var(--primary-site-color);
     background-color: var(--second-color);
 }
 
