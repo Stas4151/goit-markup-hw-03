@@ -5,14 +5,15 @@
     --second-text-color: #757575;
     --second-color: #2196F3;
     --background-color-site: #2F303A;
+    --team-color: #F5F4FA;
     --contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
     background-color: var (var(--primary-site-color));
     color: var(--main-text-color);
-    font-family: "Roboto";
-    letter-spacing: 0.02em; 
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em; 
     font-size: 14px; 
 }
 
@@ -51,13 +52,13 @@ a {
 nav .site-nav {
     font-weight: 500;
     line-height: 1.14;
-    background-color: var(--primary-site-color);
+   
 }
 
 nav .auth-nav {
     font-weight: 500;
     line-height: 1.14;
-    background-color: var(--primary-site-color); 
+    background-color: var(--second-text-color); 
 }
 
 /* Навігація */
@@ -99,9 +100,27 @@ nav .auth-nav {
     background-color: var(--second-color);
     color:var(--general-site-color);
 
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
 }
 
 /* Особливості */
+
+.visually-hidden { 
+    position: absolute; 
+    white-space: nowrap; 
+    width: 1px; 
+    height: 1px; 
+    overflow: hidden; 
+    border: 0; padding: 0; 
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%); 
+    margin: -1px; 
+}
 
 .feature-list h3 {
     font-weight: 700;
@@ -115,8 +134,6 @@ nav .auth-nav {
     color: var(--second-text-color);
 }
 
-/* Чим ми займаємося */
-
 /* Наша команда */
 
 .sections-title {
@@ -125,6 +142,10 @@ nav .auth-nav {
     line-height: 1.7;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.section-team {
+    background-color: var(--team-color);
 }
 
 .team-list h3 {
@@ -176,9 +197,19 @@ nav .auth-nav {
     color: var(--contacts-color);
 }
 
-/* Кнопки */
+.adress .link:hover, 
+.adress .link:focus, 
+.adress .tel:hover,
+.adress .tel:focus,
+.adress .mail:hover,
+.adress .mail:hover{
+    color: var(--second-color);
+}
+
+/* Проєкти */
 
 .buttons .button-project {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
