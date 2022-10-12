@@ -55,10 +55,10 @@ nav .site-nav {
    
 }
 
-nav .auth-nav {
+.auth-nav {
     font-weight: 500;
     line-height: 1.14;
-    background-color: var(--second-text-color); 
+    color: var(--second-text-color); 
 }
 
 /* Навігація */
@@ -74,7 +74,7 @@ nav .auth-nav {
 }
 
 .auth-nav .link {
-    color: var(--background-color-site);
+    color: var(--second-text-color);
 }
 
 /* Герой */
@@ -125,11 +125,13 @@ nav .auth-nav {
 .feature-list h3 {
     font-weight: 700;
     line-height: 1.14;
+    font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .feature-list p {
     line-height: 1.7;
+    font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
@@ -206,7 +208,7 @@ nav .auth-nav {
     color: var(--second-color);
 }
 
-/* Проєкти */
+/* Кнопки */
 
 .buttons .button-project {
     font-family: inherit;
@@ -226,14 +228,17 @@ nav .auth-nav {
 
 /* Проєкти */
 
-.projects h1{
+.project-titles h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.projects p {
+.project-titles p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
     line-height: 1.7;
     color: var(--second-text-color);
 }
