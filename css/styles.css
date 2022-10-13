@@ -12,6 +12,7 @@
 body {
     background-color: var (var(--primary-site-color));
     color: var(--main-text-color);
+
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em; 
     font-size: 14px; 
@@ -56,9 +57,10 @@ nav .site-nav {
 }
 
 .auth-nav {
+    color: var(--second-text-color); 
+
     font-weight: 500;
     line-height: 1.14;
-    color: var(--second-text-color); 
 }
 
 /* Навігація */
@@ -81,24 +83,27 @@ nav .site-nav {
 
 .hero {
     background-color: var(--background-color-site);
+    
 }
 
 .hero-title {
+    color: var(--general-site-color);
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--general-site-color);
 }
 
 .hero-button {
+    color:var(--general-site-color);
+    background-color: var(--second-color);
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    background-color: var(--second-color);
-    color:var(--general-site-color);
 
     cursor: pointer;
 }
@@ -130,10 +135,12 @@ nav .site-nav {
     text-transform: uppercase;
 }
 .feature-list p {
+    color: var(--second-text-color);
+
     line-height: 1.7;
     font-size: 14px;
     letter-spacing: 0.03em;
-    color: var(--second-text-color);
+
 }
 
 /* Наша команда */
@@ -158,11 +165,12 @@ nav .site-nav {
     letter-spacing: 0.03em;
 }
 .team-list p {
+    color: var(--second-text-color);
+
     font-size: 16px;
     line-height: 1.19px;
     /* text-align: center; */
     letter-spacing: 0.03em;
-    color: var(--second-text-color);
 }
 
 /* Підвал */
@@ -211,13 +219,14 @@ nav .site-nav {
 /* Кнопки */
 
 .buttons .button-project {
+    color: var(--main-text-color);
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-text-color);
     cursor: pointer;
 }
 
@@ -229,17 +238,19 @@ nav .site-nav {
 /* Проєкти */
 
 .project-titles h2 {
+    color: var(--main-text-color);
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-text-color);
 }
 
 .project-titles p {
+    color: var(--second-text-color);
+
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30/16);
     line-height: 1.7;
-    color: var(--second-text-color);
 }
