@@ -26,7 +26,43 @@ a {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Меню навігації */
+
+header {
+    padding: 30 0;
+
+}
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    outline: 2px solid tomato;
+}
+
 
 .logo-first, .logo-second {
     font-family: 'Raleway';
@@ -64,6 +100,7 @@ nav .site-nav {
 }
 
 /* Навігація */
+
 .site-nav .link {
     color: var(--main-text-color);
 }
@@ -79,11 +116,46 @@ nav .site-nav {
     color: var(--second-text-color);
 }
 
+.head-container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-head {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-navigation {
+    display: flex;
+}
+
+.auth-nav {
+    display: flex;
+}
+
+.mail-auth {
+    margin-right: 50px;
+}
+
 /* Герой */
 
 .hero {
     background-color: var(--background-color-site);
-    
+
+    display: flex;
+}
+
+.hero-container {
+    display: flex;
 }
 
 .hero-title {
@@ -106,6 +178,13 @@ nav .site-nav {
     line-height: 1.9;
 
     cursor: pointer;
+
+    margin: 0 auto;
+    display: flex;
+    border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
+    text-align: center;
 }
 
 .hero-button:hover,
@@ -127,6 +206,12 @@ nav .site-nav {
     margin: -1px; 
 }
 
+.feature-list {
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+}
+
 .feature-list h3 {
     font-weight: 700;
     line-height: 1.14;
@@ -134,14 +219,31 @@ nav .site-nav {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .feature-list p {
     color: var(--second-text-color);
 
     line-height: 1.7;
     font-size: 14px;
     letter-spacing: 0.03em;
-
 }
+
+/* Чим ми займаємось */
+
+ .about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    margin-bottom: 50px;
+ }
+
+ .about-list {
+    display: flex;
+    justify-content: space-between;
+ }
 
 /* Наша команда */
 
@@ -150,7 +252,9 @@ nav .site-nav {
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;  
+
+    margin-bottom: 50px;
 }
 
 .section-team {
@@ -161,7 +265,7 @@ nav .site-nav {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /* text-align: center; */
+    text-align: center; 
     letter-spacing: 0.03em;
 }
 .team-list p {
@@ -171,6 +275,39 @@ nav .site-nav {
     line-height: 1.19px;
     /* text-align: center; */
     letter-spacing: 0.03em;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.team-list:nth-last-child(1) {
+    margin-right: 30px;
+}
+
+.team-card {
+    margin-bottom: 40px;
+}
+
+.photo {
+    margin-bottom: 30px;
+    outline: 2px solid tomato;
+}
+
+.stuff {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+    justify-content: center; 
+    outline: 2px solid tomato;
+}
+
+.profession {
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    outline: 2px solid tomato;
 }
 
 /* Підвал */
