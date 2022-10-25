@@ -447,18 +447,23 @@ nav .site-nav {
 }
 
 .project-titles {
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 30px; */
+    gap: 30px;
+    padding: 0;
+    margin: 0;
 }
 .title {
-    flex-basis: calc((100%-60px)/3);
-
+    flex-basis: calc((100%-60px)/4);
+    /* Не зрозумів чому ділимо на 4, а не 3, але спрацювало */
+    outline: 2px solid tomato;
 }
 .title:nth-child(3n+3) {
     margin-right: 0;
-    background-color: orange;
+}
+
+.project-link {
+    display: inline-block;
 }
 
 .project-photo {
@@ -467,5 +472,12 @@ nav .site-nav {
 
 .project-title {
     margin-bottom: 4px;
+    margin-right: 24px;
+    margin-left: 24px;
+    outline: 2px solid tomato;
+}
+
+.project-describe {
+    margin: 0 24px 20px;
     outline: 2px solid tomato;
 }
