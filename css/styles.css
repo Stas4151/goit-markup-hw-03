@@ -453,6 +453,11 @@ nav .site-nav {
     padding: 0;
     margin: 0;
 }
+
+.project {
+    margin-bottom: 94px;
+}
+
 .title {
     flex-basis: calc((100%-60px)/4);
     /* Не зрозумів чому ділимо на 4, а не 3, але спрацювало */
