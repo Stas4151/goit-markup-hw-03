@@ -24,9 +24,9 @@
                     <a class="logo-head" href="https://stas4151.github.io/goit-markup-hw-02/"> <span class="logo-first">Web</span><span class="logo-second">Studio</a>
             
                     <ul class="site-nav list">
-                        <li><a href="index.html"class="link">Студія</a></li>
-                        <li><a href="./portfolio.html"class="link">Портфоліо</a></li> 
-                        <li><a href="" class="link">Контакти</a></li>
+                        <li class="header-link"><a href="index.html"class="link">Студія</a></li>
+                        <li class="header-link"><a href="./portfolio.html"class="link">Портфоліо</a></li> 
+                        <li class="header-link"><a href="" class="link">Контакти</a></li>
                     </ul>
                    </nav>
     
@@ -41,18 +41,18 @@
     <main>
         <!--Герой-->
 
-        <div class="hero">
+        <section class="hero">
+
             <div class="container">
-                <section>
                     <h1 class="hero-title">Ефективні рішення для <br/> вашого бізнесу</h1>
                     <button type="button" class="hero-button">Замовити послугу</button>
-                </section> 
-            </div>     
-        </div>
+            </div>  
+
+        </section>
 
         <!--Особливості-->
 
-                <section class="section features">
+                <section class="section-features">
 
                     <div class="container">
 
@@ -60,19 +60,19 @@
                        
                         <ul class="feature-list list">
                             <li class="feature-text">
-                                <h3 class="feature-attention">Увага до деталей</h3>
+                                <h3 class="feature-title">Увага до деталей</h3>
                                 <p class="attention-text text" >Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                             </li>
                             <li class="feature-text">
-                                <h3 class="feature-punctuality">Пунктуальність</h3>
+                                <h3 class="feature-title">Пунктуальність</h3>
                                 <p class="punctuality-text text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                             </li>
                             <li class="feature-text">
-                                <h3 class="feature-plan">Планування</h3>
+                                <h3 class="feature-title">Планування</h3>
                                 <p class="plan-text text">Так само консультація з широким активом значною мірою зумовлює.</p>
                             </li>
                             <li class="feature-text">
-                                <h3 class="feature-technology">Сучасні технології</h3>
+                                <h3 class="feature-title">Сучасні технології</h3>
                                 <p class="technology-text text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                             </li>
                         </ul>
@@ -84,7 +84,7 @@
 
         <!--Чим ми займаємось-->
 
-            <section class="section">
+            <section class="section-about">
 
                 <div class="container about">
 
@@ -119,26 +119,34 @@
 
                         <li class="team-card">
                             <img class="photo" src="./img/team-cards/img(1).jpg" alt="Ігор Дем'яненко" width="270">
-                            <h3 class="stuff">Ігор Дем'яненко</h3>
-                            <p class="profession">Product Designer</p>
+                           <div class="team-name">
+                                <h3 class="stuff">Ігор Дем'яненко</h3>
+                                <p class="profession">Product Designer</p>
+                           </div class="team-name">
                         </li>
         
                         <li class="team-card">
                             <img class="photo" src="./img/team-cards/img(2).jpg" alt="Ольга Рєпіна"width="270">
-                            <h3 class="stuff">Ольга Рєпіна</h3>
-                            <p class="profession">Frontend Developer</p>
+                            <div class="team-name">
+                                <h3 class="stuff">Ольга Рєпіна</h3>
+                                <p class="profession">Frontend Developer</p>
+                            </div class="team-name">
                         </li>
         
                         <li class="team-card">
                             <img class="photo" src="./img/team-cards/img(3).jpg" alt="Микола Тарасов"width="270">
-                            <h3 class="stuff">Микола Тарасов</h3>
-                            <p class="profession">Marketing</p>
+                            <div class="team-name">
+                                <h3 class="stuff">Микола Тарасов</h3>
+                                <p class="profession">Marketing</p>
+                            </div class="team-name">
                         </li>
         
                         <li class="team-card">
                             <img class="photo" src="./img/team-cards/img(4).jpg" alt=""width="270">
-                            <h3 class="stuff">Михайло Єрмаков</h3>
-                            <p class="profession">UI Designer</p>
+                            <div class="team-name">
+                                <h3 class="stuff">Михайло Єрмаков</h3>
+                                <p class="profession">UI Designer</p>
+                            </div class="team-name">
                         </li>
                         
                     </ul>
@@ -155,9 +163,7 @@
 
         <div class="container">
 
-                <a class="logo-footer" 
-                href="#"><span class="logo-footer-first">Web</span>
-                <span class="logo-footer-second">Studio</span> </a>
+                <div class="logo-footer" ><ahref="#"><span class="logo-footer-first">Web</span><span class="logo-footer-second">Studio</span> </a></div>
             
             <address class="footer-adress">
                 <ul class="adress list">

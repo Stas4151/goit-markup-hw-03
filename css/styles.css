@@ -47,10 +47,10 @@ img {
 
 .container {
     width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-
-    outline: 2px solid tomato;
+    padding-left:  15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Меню навігації */
@@ -111,12 +111,11 @@ nav .site-nav {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo-head {
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .site-nav {
@@ -127,6 +126,12 @@ nav .site-nav {
 
 .header-navigation {
     display: flex;
+    align-items: center;
+}
+
+.header-link {
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .auth-nav {
@@ -143,14 +148,15 @@ nav .site-nav {
     background-color: var(--background-color-site);
 
     display: flex;
-    margin-bottom: 94px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
 }
-
-
 
 .hero-title {
     padding-top: 200px;
-    margin-bottom: 17px;
+    margin-bottom: 30px;
+
     color: var(--general-site-color);
 
     font-weight: 900;
@@ -162,23 +168,16 @@ nav .site-nav {
 }
 
 .hero-button {
-    margin: 0 auto;
-    margin-bottom: 200px;
-    padding: 10px 32px;
-    display: flex;
     border-radius: 4px;
-    min-width: 216px;
-    min-height: 50px;
+    border-color: transparent;
+    align-items: center;
+    text-align: center;
+    padding: 10px 32px;
+    margin-bottom: 200px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
     color:var(--general-site-color);
     background-color: var(--second-color);
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
 
     cursor: pointer;
 }
@@ -202,9 +201,11 @@ nav .site-nav {
     margin: -1px; 
 }
 
-.features {
-    margin: 0 auto;
-    margin-bottom: 94px;
+.section-features {
+    padding-top: 94px;
+    padding-bottom:  94px;
+    margin-left: 215px;
+    margin-right: 215px;
 }
 
 .feature-list {
@@ -229,7 +230,15 @@ nav .site-nav {
     letter-spacing: 0.03em;
 }
 
+.feature-title {
+    margin-bottom: 10px;
+}
+
 /* Чим ми займаємось */
+
+.section-about {
+    margin-bottom: 94px;
+}
 
  .about-title {
     font-weight: 700;
@@ -239,10 +248,6 @@ nav .site-nav {
     letter-spacing: 0.03em;
     
     margin-bottom: 50px;
- }
-
- .about {
-    margin-bottom: 55px;
  }
 
  .about-list {
@@ -258,14 +263,13 @@ nav .site-nav {
 
 .sections-title {
     padding-top: 94px;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
     letter-spacing: 0.03em;  
-
 }
 
 .section-team {
@@ -283,7 +287,7 @@ nav .site-nav {
     color: var(--second-text-color);
 
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -297,33 +301,20 @@ nav .site-nav {
 .team-card {
     margin-bottom: 3px;
     margin-right: 30px;
+    text-align: center;
 
+    box-shadow: 0px 1px 3px  rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),  0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-site-color);
 }
 
 .team-card:last-child(1) {
     margin-right: 0;
 }
 
-.photo {
-    margin-bottom: 30px;
-    outline: 2px solid tomato;
-}
-
-.stuff {
-    margin: 0 70px 10px 71px;
-    display: flex;
-    text-align: center;
-    /* justify-content: center;  */
-    outline: 2px solid tomato;
-}
-
-.profession {
-    margin: 0 70px;
+.team-name {
+    padding-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
-    /* justify-content: center;  */
-    outline: 2px solid tomato;
 }
 
 /* Підвал */
@@ -369,9 +360,11 @@ nav .site-nav {
     color: var(--second-color);
 }
 
-.logo-footer {
-    display: flex;
+.footer {
     padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-footer {
     margin-bottom: 20px;
 }
 
@@ -401,29 +394,25 @@ nav .site-nav {
 .buttons-list .button-project:hover {
     color: var(--primary-site-color);
     background-color: var(--second-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects {
-   margin-top: 94px;
+.project {
+   padding-top: 94px;
+   padding-bottom: 94px;
 }
 
 .buttons-list {
     display: flex;
-    margin: 0px auto;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 54px;
-    padding-bottom: 14px;
-
-    outline: solid 2px tomato;
+    margin-bottom: 34px;
 }
 
 .button-project {
     padding: 6px 22px;
-    display: flex;
     border-radius: 4px;
-
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: none;
 }
 
 /* Проєкти */
@@ -459,9 +448,7 @@ nav .site-nav {
 }
 
 .title {
-    flex-basis: calc((100%-60px)/4);
-    /* Не зрозумів чому ділимо на 4, а не 3, але спрацювало */
-    outline: 2px solid tomato;
+    flex-basis: calc((100% - 60px) / 3);
 }
 .title:nth-child(3n+3) {
     margin-right: 0;
@@ -469,20 +456,15 @@ nav .site-nav {
 
 .project-link {
     display: inline-block;
+    border: 1px solid #EEEEEE;
 }
 
 .project-photo {
-    margin-bottom: 21px;
-}
-
-.project-title {
-    margin-bottom: 4px;
-    margin-right: 24px;
-    margin-left: 24px;
-    outline: 2px solid tomato;
+    margin-bottom: 20px;
 }
 
 .project-describe {
-    margin: 0 24px 20px;
-    outline: 2px solid tomato;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
 }
