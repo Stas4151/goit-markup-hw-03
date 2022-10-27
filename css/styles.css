@@ -41,6 +41,7 @@ ul {
     margin: 0;
     padding-left: 0;
 }
+
 img {
     display: block;
 }
@@ -101,6 +102,10 @@ nav .site-nav {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--second-color);
+}
+
+.link.current {
+    color: blue;
 }
 
 .auth-nav .link {
@@ -205,7 +210,7 @@ nav .site-nav {
     padding-top: 94px;
     padding-bottom: 94px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 0 px;
 }
 
 .feature-list {
