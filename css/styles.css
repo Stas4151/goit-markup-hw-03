@@ -105,7 +105,7 @@ nav .site-nav {
 }
 
 .link.current {
-    color: blue;
+    color: var(--second-color);
 }
 
 .auth-nav .link {
@@ -135,8 +135,8 @@ nav .site-nav {
 }
 
 .header-link {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .auth-nav {
@@ -154,14 +154,10 @@ nav .site-nav {
 
     display: flex;
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 94px;
 }
 
 .hero-title {
-    padding-top: 200px;
-    margin-bottom: 30px;
-
     color: var(--general-site-color);
 
     font-weight: 900;
@@ -170,6 +166,7 @@ nav .site-nav {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -178,7 +175,6 @@ nav .site-nav {
     align-items: center;
     text-align: center;
     padding: 10px 32px;
-    margin-bottom: 200px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color:var(--general-site-color);
@@ -322,6 +318,10 @@ nav .site-nav {
     padding-bottom: 30px;
 }
 
+.stuff {
+    margin-bottom: 10px;
+}
+
 /* Підвал */
 
 .logo-footer-first, .logo-footer-second {
@@ -411,7 +411,7 @@ nav .site-nav {
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .button-project {
@@ -469,7 +469,5 @@ nav .site-nav {
 }
 
 .project-describe {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
+    padding: 24px 20px;
 }
