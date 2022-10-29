@@ -373,11 +373,6 @@ nav .site-nav {
     margin-bottom: 20px;
 }
 
-.footer-adress {
-    display: flex;
-    padding-bottom: 60px;
-}
-
 .link-footer, .mail-footer {
     margin-bottom: 9px;
 }
@@ -462,10 +457,6 @@ nav .site-nav {
 .project-link {
     display: inline-block;
     border: 1px solid #EEEEEE;
-}
-
-.project-photo {
-    margin-bottom: 20px;
 }
 
 .project-describe {
